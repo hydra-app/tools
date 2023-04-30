@@ -1,0 +1,106 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'org.jetbrains.dokka'
+    id 'maven-publish'
+}
+
+android {
+    namespace 'knf.hydra.tools.mal'
+    compileSdk 33
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 33
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    api 'knf.hydra:core:1.0-rc2'
+    api 'knf.hydra.tools:core-animes:1.0'
+    api 'knf.hydra.tools:core-ktx:1.0'
+    dokkaPlugin 'org.jetbrains.dokka:android-documentation-plugin:1.8.10'
+}
+
+tasks.dokkaHtml.configure {
+    outputDirectory.set(file("$rootDir/libs/mal/docs"))
+    dokkaSourceSets {
+        configureEach {
+            includes.from("README.md")
+            noAndroidSdkLink.set(false)
+            sourceLink {
+                remoteUrl.set(java.net.URL("https://github.com/jordyamc/hydra_core/tree/master/core/src/main/java"))
+                remoteLineSuffix.set("#L")
+            }
+        }
+    }
+}
+
+task dokkaJavadocJar(type: Jar) {
+    dependsOn(tasks.dokkaJavadoc)
+    def directories = new ArrayList<Object>()
+    tasks.dokkaJavadoc.each {
+        directories.add(it.outputDirectory)
+    }
+    from(directories)
+    archiveClassifier.set("javadoc")
+}
+
+task dokkaHtmlJar(type: Jar) {
+    dependsOn(tasks.dokkaHtml)
+    def directories = new ArrayList<Object>()
+    tasks.dokkaHtml.each {
+        directories.add(it.outputDirectory)
+    }
+    from(directories)
+    archiveClassifier.set("html-doc")
+}
+
+task androidSourcesJar(type: Jar) {
+    archiveClassifier.set('sources')
+    from android.sourceSets.main.java.srcDirs
+}
+
+artifacts {
+    archives androidSourcesJar
+    archives dokkaJavadocJar
+    archives dokkaHtmlJar
+}
+
+afterEvaluate {
+    publishing {
+        repositories {
+            maven {
+                url = uri("$buildDir/repository")
+            }
+        }
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'knf.hydra.tools'
+                artifactId = 'mal'
+                version = '1.0'
+                artifact(androidSourcesJar)
+                artifact(dokkaJavadocJar)
+                artifact(dokkaHtmlJar)
+            }
+        }
+    }
+}

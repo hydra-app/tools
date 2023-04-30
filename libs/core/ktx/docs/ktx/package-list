@@ -1,0 +1,9 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:knf.hydra.tools.core.ktx////PointingToDeclaration/ktx/knf.hydra.tools.core.ktx/index.html
+$dokka.location:knf.hydra.tools.core.ktx//map/org.json.JSONArray#kotlin.Function1[org.json.JSONObject,TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/ktx/knf.hydra.tools.core.ktx/map.html
+$dokka.location:knf.hydra.tools.core.ktx//mapNotNull/org.json.JSONArray#kotlin.Function1[org.json.JSONObject,TypeParam(bounds=[kotlin.Any?])?]/PointingToDeclaration/ktx/knf.hydra.tools.core.ktx/map-not-null.html
+$dokka.location:knf.hydra.tools.core.ktx//toList/org.json.JSONArray#/PointingToDeclaration/ktx/knf.hydra.tools.core.ktx/to-list.html
+$dokka.location:knf.hydra.tools.core.ktx//toStringList/org.json.JSONArray#/PointingToDeclaration/ktx/knf.hydra.tools.core.ktx/to-string-list.html
+knf.hydra.tools.core.ktx
+

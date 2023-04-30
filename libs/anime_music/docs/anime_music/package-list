@@ -1,0 +1,6 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:knf.hydra.tools.anime_music////PointingToDeclaration/anime_music/knf.hydra.tools.anime_music/index.html
+$dokka.location:knf.hydra.tools.anime_music//animeMusicSection/#kotlin.String#kotlin.String/PointingToDeclaration/anime_music/knf.hydra.tools.anime_music/anime-music-section.html
+knf.hydra.tools.anime_music
+

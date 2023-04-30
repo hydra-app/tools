@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        mavenLocal()
+        maven { url "https://jitpack.io" }
+    }
+}
+rootProject.name = "Hydra Tools"
+include ':libs:mal'
+include ':libs:anime_music'
+include ':libs:core:anime'
+include ':libs:core:ktx'

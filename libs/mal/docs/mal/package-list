@@ -1,0 +1,40 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:knf.hydra.tools.mal////PointingToDeclaration/mal/knf.hydra.tools.mal/index.html
+$dokka.location:knf.hydra.tools.mal//searchMAL/#kotlin.Int/PointingToDeclaration/mal/knf.hydra.tools.mal/search-m-a-l.html
+$dokka.location:knf.hydra.tools.mal//searchMAL/#kotlin.String#kotlin.Function1[kotlin.collections.List[knf.hydra.tools.mal.AnimeResult],knf.hydra.tools.mal.AnimeResult]/PointingToDeclaration/mal/knf.hydra.tools.mal/search-m-a-l.html
+$dokka.location:knf.hydra.tools.mal/AnimeResult///PointingToDeclaration/mal/knf.hydra.tools.mal/-anime-result/index.html
+$dokka.location:knf.hydra.tools.mal/AnimeResult/airing/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-anime-result/airing.html
+$dokka.location:knf.hydra.tools.mal/AnimeResult/id/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-anime-result/id.html
+$dokka.location:knf.hydra.tools.mal/AnimeResult/name_default/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-anime-result/name_default.html
+$dokka.location:knf.hydra.tools.mal/AnimeResult/name_english/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-anime-result/name_english.html
+$dokka.location:knf.hydra.tools.mal/AnimeResult/name_japanese/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-anime-result/name_japanese.html
+$dokka.location:knf.hydra.tools.mal/AnimeResult/type/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-anime-result/type.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher.BasicData///PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/-basic-data/index.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher.BasicData/airedSection/#kotlin.String#kotlin.Function2[java.util.Calendar,java.util.Calendar?,kotlin.String]/PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/-basic-data/aired-section.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher.BasicData/alternativeTitlesSection/#kotlin.String/PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/-basic-data/alternative-titles-section.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher.BasicData/raw/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/-basic-data/raw.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher.BasicData/trailerSection/#kotlin.String/PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/-basic-data/trailer-section.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher.CharactersData///PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/-characters-data/index.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher.CharactersData/charactersSection/#kotlin.String/PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/-characters-data/characters-section.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher.CharactersData/raw/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/-characters-data/raw.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher.CharactersData/voiceActorsSection/#kotlin.String/PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/-characters-data/voice-actors-section.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher.GalleryCreatorData.Creator///PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/-gallery-creator-data/-creator/index.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher.GalleryCreatorData.Creator/Creator/#org.json.JSONObject#org.json.JSONArray/PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/-gallery-creator-data/-creator/-creator.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher.GalleryCreatorData.Creator/addMusicVideos/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/-gallery-creator-data/-creator/add-music-videos.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher.GalleryCreatorData.Creator/addPictures/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/-gallery-creator-data/-creator/add-pictures.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher.GalleryCreatorData.Creator/addPromoVideos/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/-gallery-creator-data/-creator/add-promo-videos.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher.GalleryCreatorData///PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/-gallery-creator-data/index.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher.GalleryCreatorData/gallerySection/#kotlin.String#kotlin.Function1[knf.hydra.tools.mal.MALSearcher.GalleryCreatorData.Creator,kotlin.Unit]/PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/-gallery-creator-data/gallery-section.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher.GalleryCreatorData/picturesRaw/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/-gallery-creator-data/pictures-raw.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher.GalleryCreatorData/videosRaw/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/-gallery-creator-data/videos-raw.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher.StaffData///PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/-staff-data/index.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher.StaffData/raw/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/-staff-data/raw.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher.StaffData/staffSection/#kotlin.String/PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/-staff-data/staff-section.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher///PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/index.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher/basicData/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/basic-data.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher/charactersData/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/characters-data.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher/galleryData/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/gallery-data.html
+$dokka.location:knf.hydra.tools.mal/MALSearcher/staffData/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/staff-data.html
+knf.hydra.tools.mal
+

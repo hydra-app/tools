@@ -33,16 +33,16 @@ android {
 }
 
 dependencies {
-    api 'knf.hydra:core:1.0-rc2'
-    api 'knf.hydra.tools:core-animes:1.0'
-    api 'knf.hydra.tools:core-ktx:1.0'
+    api 'com.github.hydra-app:core:1.0-rc2'
+    api 'com.github.hydra-app.tools:core-animes:5804c557f9'
+    api 'com.github.hydra-app.tools:core-ktx:5804c557f9'
     dokkaPlugin 'org.jetbrains.dokka:android-documentation-plugin:1.8.10'
 }
 
 tasks.dokkaHtml.configure {
     outputDirectory.set(file("$rootDir/libs/mal/docs"))
     dokkaSourceSets {
-        configureEach {
+        named("main") {
             includes.from("README.md")
             noAndroidSdkLink.set(false)
             sourceLink {

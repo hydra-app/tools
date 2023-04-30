@@ -15,7 +15,7 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Hydra Tools"
-//include ':libs:mal'
-//include ':libs:anime_music'
+include ':libs:mal'
+include ':libs:anime_music'
 include ':libs:core:anime'
 include ':libs:core:core-ktx'

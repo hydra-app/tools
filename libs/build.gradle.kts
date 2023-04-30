@@ -1,6 +1,7 @@
 import org.jetbrains.dokka.gradle.DokkaTaskPartial
 
 plugins {
+    id("maven-publish")
     id("org.jetbrains.dokka")
 }
 

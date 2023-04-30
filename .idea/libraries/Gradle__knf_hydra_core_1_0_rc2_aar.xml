@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: knf.hydra:core:1.0-rc2@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5ff041052d681009e1e9abf446c268ef/transformed/core-1.0-rc2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/5ff041052d681009e1e9abf446c268ef/transformed/core-1.0-rc2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.m2/repository/knf/hydra/core/1.0-rc2/core-1.0-rc2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.m2/repository/knf/hydra/core/1.0-rc2/core-1.0-rc2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

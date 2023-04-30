@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.TerryHuangHD:UserAgency-Android:0.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d48fbdaee1113f0f4bcd2f1c6cc19ce5/transformed/UserAgency-Android-0.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d48fbdaee1113f0f4bcd2f1c6cc19ce5/transformed/UserAgency-Android-0.3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.TerryHuangHD/UserAgency-Android/0.3/d7b1b28bdfcb7b44b13944736ed73972e4247d23/UserAgency-Android-0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

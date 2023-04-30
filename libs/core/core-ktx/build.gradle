@@ -37,13 +37,13 @@ dependencies {
 }
 
 tasks.dokkaHtml.configure {
-    outputDirectory.set(file("$rootDir/libs/core/ktx/docs"))
+    outputDirectory.set(file("$rootDir/libs/core/core-ktx/docs"))
     dokkaSourceSets {
-        configureEach {
+        named("main") {
             includes.from("README.md")
             noAndroidSdkLink.set(false)
             sourceLink {
-                remoteUrl.set(java.net.URL("https://github.com/jordyamc/hydra_core/tree/master/core/src/main/java"))
+                remoteUrl.set(java.net.URL("https://github.com/hydra-app/tools/tree/main/libs/core/core-ktx/src/main/java"))
                 remoteLineSuffix.set("#L")
             }
         }

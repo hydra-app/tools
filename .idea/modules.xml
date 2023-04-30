@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Hydra_Tools.iml" filepath="$PROJECT_DIR$/.idea/modules/Hydra_Tools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/Hydra_Tools.libs.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/Hydra_Tools.libs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/anime_music/Hydra_Tools.libs.anime_music.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/anime_music/Hydra_Tools.libs.anime_music.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/anime_music/Hydra_Tools.libs.anime_music.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/anime_music/Hydra_Tools.libs.anime_music.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/anime_music/Hydra_Tools.libs.anime_music.main.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/anime_music/Hydra_Tools.libs.anime_music.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/anime_music/Hydra_Tools.libs.anime_music.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/anime_music/Hydra_Tools.libs.anime_music.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/core/Hydra_Tools.libs.core.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/core/Hydra_Tools.libs.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/core/anime/Hydra_Tools.libs.core.anime.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/core/anime/Hydra_Tools.libs.core.anime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/core/anime/Hydra_Tools.libs.core.anime.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/core/anime/Hydra_Tools.libs.core.anime.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/core/anime/Hydra_Tools.libs.core.anime.main.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/core/anime/Hydra_Tools.libs.core.anime.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/core/anime/Hydra_Tools.libs.core.anime.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/core/anime/Hydra_Tools.libs.core.anime.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/core/ktx/Hydra_Tools.libs.core.ktx.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/core/ktx/Hydra_Tools.libs.core.ktx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/core/ktx/Hydra_Tools.libs.core.ktx.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/core/ktx/Hydra_Tools.libs.core.ktx.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/core/ktx/Hydra_Tools.libs.core.ktx.main.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/core/ktx/Hydra_Tools.libs.core.ktx.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/core/ktx/Hydra_Tools.libs.core.ktx.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/core/ktx/Hydra_Tools.libs.core.ktx.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/mal/Hydra_Tools.libs.mal.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/mal/Hydra_Tools.libs.mal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/mal/Hydra_Tools.libs.mal.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/mal/Hydra_Tools.libs.mal.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/mal/Hydra_Tools.libs.mal.main.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/mal/Hydra_Tools.libs.mal.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/mal/Hydra_Tools.libs.mal.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/mal/Hydra_Tools.libs.mal.unitTest.iml" />
+    </modules>
+  </component>
+</project>

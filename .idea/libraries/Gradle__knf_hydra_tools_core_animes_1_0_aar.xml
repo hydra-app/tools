@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: knf.hydra.tools:core-animes:1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ff8c0836932faff6c588952e589ac49a/transformed/core-animes-1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ff8c0836932faff6c588952e589ac49a/transformed/core-animes-1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.m2/repository/knf/hydra/tools/core-animes/1.0/core-animes-1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -40,7 +40,6 @@ tasks.dokkaHtml.configure {
     outputDirectory.set(file("$rootDir/libs/core/ktx/docs"))
     dokkaSourceSets {
         configureEach {
-            moduleName.set("core-ktx")
             includes.from("README.md")
             noAndroidSdkLink.set(false)
             sourceLink {

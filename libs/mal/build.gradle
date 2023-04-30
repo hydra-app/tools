@@ -33,9 +33,9 @@ android {
 }
 
 dependencies {
-    api 'com.github.hydra-app:core:1.0-rc2'
-    api 'com.github.hydra-app.tools:core-animes:5804c557f9'
-    api 'com.github.hydra-app.tools:core-ktx:5804c557f9'
+    api "com.github.hydra-app:core:${rootProject.core_version}"
+    api project(":libs:core:anime")
+    api project(":libs:core:core-ktx")
     dokkaPlugin 'org.jetbrains.dokka:android-documentation-plugin:1.8.10'
 }
 

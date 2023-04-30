@@ -1,7 +1,6 @@
 package knf.hydra.tools.mal
 
 import com.github.kittinunf.fuel.Fuel
-import com.github.kittinunf.fuel.core.Parameters
 import knf.hydra.core.models.data.ClickAction
 import knf.hydra.core.models.data.CollectionData
 import knf.hydra.core.models.data.CollectionItem
@@ -13,8 +12,6 @@ import knf.hydra.core.models.data.TextData
 import knf.hydra.core.models.data.VerticalImageItem
 import knf.hydra.core.models.data.YoutubeData
 import knf.hydra.core.models.data.YoutubeItem
-import knf.hydra.core.models.data.asFlow
-import knf.hydra.core.tools.web.SimpleOKHttp
 import knf.hydra.tools.core.anime.AnimeNotFoundException
 import knf.hydra.tools.core.ktx.map
 import knf.hydra.tools.core.ktx.mapNotNull
@@ -23,8 +20,6 @@ import knf.hydra.tools.core.ktx.toStringList
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.flow.flowOf
-import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.withTimeout
 import org.json.JSONArray

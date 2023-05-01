@@ -46,7 +46,7 @@ tasks.dokkaHtml.configure {
             includes.from("README.md")
             noAndroidSdkLink.set(false)
             sourceLink {
-                remoteUrl.set(java.net.URL("https://github.com/jordyamc/hydra_core/tree/master/core/src/main/java"))
+                remoteUrl.set(java.net.URL("https://github.com/hydra-app/tools/tree/main/libs/anime_music/src/main/java"))
                 remoteLineSuffix.set("#L")
             }
         }

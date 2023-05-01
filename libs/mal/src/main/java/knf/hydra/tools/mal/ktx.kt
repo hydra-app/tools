@@ -41,14 +41,20 @@ fun searchMAL(id: Int): MALSearcher = MALSearcher(id)
  * Create a new searcher using the [title]
  *
  * @param title The anime title for search
+ * @param type Optional anime type, by default [AnimeType.ANY]
  * @param search Optional function to select a result from the list, by default the first result is selected
  * @return A searcher using the anime [title]
  * @throws AnimeNotFoundException if the search returns empty
  */
 @Throws(AnimeNotFoundException::class)
-suspend fun searchMAL(title: String, search: (results: List<AnimeResult>) -> AnimeResult = { it.first() }): MALSearcher {
+suspend fun searchMAL(title: String, type: AnimeType = AnimeType.ANY, search: (results: List<AnimeResult>) -> AnimeResult = { it.first() }): MALSearcher {
     val searchResponseJson = withContext(Dispatchers.IO) {
-        val searchLink = "https://api.jikan.moe/v4/anime?q=${URLEncoder.encode(title, "utf-8")}&limit=1"
+        val searchLink = StringBuilder("https://api.jikan.moe/v4/anime?q=${URLEncoder.encode(title, "utf-8")}").apply {
+            if (type != AnimeType.ANY) {
+                append("&type=${type.value}")
+            }
+            append("&limit=1")
+        }.toString()
         withTimeout(2000) {
             JSONObject(URL(searchLink).readText())
         }
@@ -59,6 +65,17 @@ suspend fun searchMAL(title: String, search: (results: List<AnimeResult>) -> Ani
     } else {
         throw AnimeNotFoundException(title)
     }
+}
+
+enum class AnimeType(val value: String) {
+    ANY(""),
+    TV("tv"),
+    MOVIE("movie"),
+    OVA("ova"),
+    SPECIAL("special"),
+    ONA("ona");
+
+    fun fromValue(value: String) = values().find { it.value == value }
 }
 
 /**

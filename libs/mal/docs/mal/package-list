@@ -2,7 +2,7 @@ $dokka.format:html-v1
 $dokka.linkExtension:html
 $dokka.location:knf.hydra.tools.mal////PointingToDeclaration/mal/knf.hydra.tools.mal/index.html
 $dokka.location:knf.hydra.tools.mal//searchMAL/#kotlin.Int/PointingToDeclaration/mal/knf.hydra.tools.mal/search-m-a-l.html
-$dokka.location:knf.hydra.tools.mal//searchMAL/#kotlin.String#kotlin.Function1[kotlin.collections.List[knf.hydra.tools.mal.AnimeResult],knf.hydra.tools.mal.AnimeResult]/PointingToDeclaration/mal/knf.hydra.tools.mal/search-m-a-l.html
+$dokka.location:knf.hydra.tools.mal//searchMAL/#kotlin.String#knf.hydra.tools.mal.AnimeType#kotlin.Function1[kotlin.collections.List[knf.hydra.tools.mal.AnimeResult],knf.hydra.tools.mal.AnimeResult]/PointingToDeclaration/mal/knf.hydra.tools.mal/search-m-a-l.html
 $dokka.location:knf.hydra.tools.mal/AnimeResult///PointingToDeclaration/mal/knf.hydra.tools.mal/-anime-result/index.html
 $dokka.location:knf.hydra.tools.mal/AnimeResult/airing/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-anime-result/airing.html
 $dokka.location:knf.hydra.tools.mal/AnimeResult/id/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-anime-result/id.html
@@ -10,6 +10,17 @@ $dokka.location:knf.hydra.tools.mal/AnimeResult/name_default/#/PointingToDeclara
 $dokka.location:knf.hydra.tools.mal/AnimeResult/name_english/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-anime-result/name_english.html
 $dokka.location:knf.hydra.tools.mal/AnimeResult/name_japanese/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-anime-result/name_japanese.html
 $dokka.location:knf.hydra.tools.mal/AnimeResult/type/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-anime-result/type.html
+$dokka.location:knf.hydra.tools.mal/AnimeType.ANY///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}mal/knf.hydra.tools.mal/-anime-type/-a-n-y/index.html
+$dokka.location:knf.hydra.tools.mal/AnimeType.MOVIE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}mal/knf.hydra.tools.mal/-anime-type/-m-o-v-i-e/index.html
+$dokka.location:knf.hydra.tools.mal/AnimeType.ONA///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}mal/knf.hydra.tools.mal/-anime-type/-o-n-a/index.html
+$dokka.location:knf.hydra.tools.mal/AnimeType.OVA///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}mal/knf.hydra.tools.mal/-anime-type/-o-v-a/index.html
+$dokka.location:knf.hydra.tools.mal/AnimeType.SPECIAL///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}mal/knf.hydra.tools.mal/-anime-type/-s-p-e-c-i-a-l/index.html
+$dokka.location:knf.hydra.tools.mal/AnimeType.TV///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}mal/knf.hydra.tools.mal/-anime-type/-t-v/index.html
+$dokka.location:knf.hydra.tools.mal/AnimeType///PointingToDeclaration/mal/knf.hydra.tools.mal/-anime-type/index.html
+$dokka.location:knf.hydra.tools.mal/AnimeType/fromValue/#kotlin.String/PointingToDeclaration/mal/knf.hydra.tools.mal/-anime-type/from-value.html
+$dokka.location:knf.hydra.tools.mal/AnimeType/value/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-anime-type/value.html
+$dokka.location:knf.hydra.tools.mal/AnimeType/valueOf/#kotlin.String/PointingToDeclaration/mal/knf.hydra.tools.mal/-anime-type/value-of.html
+$dokka.location:knf.hydra.tools.mal/AnimeType/values/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-anime-type/values.html
 $dokka.location:knf.hydra.tools.mal/MALSearcher.BasicData///PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/-basic-data/index.html
 $dokka.location:knf.hydra.tools.mal/MALSearcher.BasicData/airedSection/#kotlin.String#kotlin.Function2[java.util.Calendar,java.util.Calendar?,kotlin.String]/PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/-basic-data/aired-section.html
 $dokka.location:knf.hydra.tools.mal/MALSearcher.BasicData/alternativeTitlesSection/#kotlin.String/PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/-basic-data/alternative-titles-section.html

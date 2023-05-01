@@ -46,7 +46,7 @@ tasks.dokkaHtml.configure {
             includes.from("README.md")
             noAndroidSdkLink.set(false)
             sourceLink {
-                remoteUrl.set(java.net.URL("https://github.com/jordyamc/hydra_core/tree/master/core/src/main/java"))
+                remoteUrl.set(java.net.URL("https://github.com/hydra-app/tools/tree/main/libs/mal/src/main/java"))
                 remoteLineSuffix.set("#L")
             }
         }
@@ -94,9 +94,9 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-                groupId = 'knf.hydra.tools'
+                groupId = 'com.github.hydra-app.tools'
                 artifactId = 'mal'
-                version = '1.0'
+                version = '1.0.1-local'
                 artifact(androidSourcesJar)
                 artifact(dokkaJavadocJar)
                 artifact(dokkaHtmlJar)

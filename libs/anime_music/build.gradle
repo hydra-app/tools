@@ -96,7 +96,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'knf.hydra.tools'
                 artifactId = 'anime_music'
-                version = '1.0'
+                version = rootProject.lib_version
                 artifact(androidSourcesJar)
                 artifact(dokkaJavadocJar)
                 artifact(dokkaHtmlJar)

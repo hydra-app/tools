@@ -94,9 +94,9 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.github.hydra-app.tools'
+                groupId = 'knf.hydra.tools'
                 artifactId = 'mal'
-                version = '1.0.1-local'
+                version = rootProject.lib_version
                 artifact(androidSourcesJar)
                 artifact(dokkaJavadocJar)
                 artifact(dokkaHtmlJar)

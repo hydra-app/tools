@@ -48,7 +48,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'knf.hydra.tools'
                 artifactId = 'core-animes'
-                version = '1.0'
+                version = rootProject.lib_version
                 artifact(androidSourcesJar)
             }
         }

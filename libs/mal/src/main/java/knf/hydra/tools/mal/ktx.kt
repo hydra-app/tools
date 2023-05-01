@@ -67,6 +67,9 @@ suspend fun searchMAL(title: String, type: AnimeType = AnimeType.ANY, search: (r
     }
 }
 
+/**
+ * Anime types
+ */
 enum class AnimeType(val value: String) {
     ANY(""),
     TV("tv"),
@@ -75,6 +78,7 @@ enum class AnimeType(val value: String) {
     SPECIAL("special"),
     ONA("ona");
 
+    /** @hide */
     fun fromValue(value: String) = values().find { it.value == value }
 }
 

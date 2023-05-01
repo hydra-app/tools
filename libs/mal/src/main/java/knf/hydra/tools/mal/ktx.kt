@@ -76,10 +76,7 @@ enum class AnimeType(val value: String) {
     MOVIE("movie"),
     OVA("ova"),
     SPECIAL("special"),
-    ONA("ona");
-
-    /** @hide */
-    fun fromValue(value: String) = values().find { it.value == value }
+    ONA("ona")
 }
 
 /**

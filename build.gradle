@@ -7,4 +7,4 @@ plugins {
 }
 
 project.ext.core_version = "1.0-rc2"
-project.ext.lib_version = "1.0.2"
+project.ext.lib_version = "1.0.3"

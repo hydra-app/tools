@@ -13,6 +13,21 @@ import java.net.URL
 import java.net.URLEncoder
 
 /**
+ * Media type to extract
+ */
+enum class MediaType {
+    /**
+     * Video format, heavier but supports duration
+     */
+    WEBM,
+
+    /**
+     * Audio format, lighter but doesn't supports duration
+     */
+    OGG
+}
+
+/**
  * Creates a Music section for animes
  *
  * @param sectionTitle The title to be used in the section
@@ -20,7 +35,7 @@ import java.net.URLEncoder
  * @param selector Optional selector for more advanced search see api [here](https://api-docs.animethemes.moe/anime/), by default the first element is selected
  * @return An [ExtraSection] with anime music
  */
-fun animeMusicSection(sectionTitle: String,  animeTitle: String, selector: (list: List<JSONObject>) -> JSONObject = { it.first() }): ExtraSection {
+fun animeMusicSection(sectionTitle: String,  animeTitle: String, mediaType: MediaType, selector: (list: List<JSONObject>) -> JSONObject = { it.first() }): ExtraSection {
     return ExtraSection(sectionTitle, flow {
         val searchJson = withContext(Dispatchers.IO) {
             val encodedTitle = URLEncoder.encode(animeTitle, "utf-8")
@@ -36,14 +51,19 @@ fun animeMusicSection(sectionTitle: String,  animeTitle: String, selector: (list
             emit(null)
             return@flow
         }
-        val songList = songsArray.map {
-            var title = it.getJSONObject("song").getString("title")
-            val artists = it.getJSONObject("song").getJSONArray("artists")
+        val songList = songsArray.map { songObject ->
+            var title = songObject.getJSONObject("song").getString("title")
+            val artists = songObject.getJSONObject("song").getJSONArray("artists")
             if (artists.length() > 0) {
                 title += " - ${artists.getJSONObject(0).getString("name")}"
             }
-            val type = it.getString("slug")
-            val song = it.getJSONArray("animethemeentries").getJSONObject(0).getJSONArray("videos").getJSONObject(0).getJSONObject("audio").getString("link")
+            val type = songObject.getString("slug")
+            val song = songObject.getJSONArray("animethemeentries").getJSONObject(0).getJSONArray("videos").getJSONObject(0).let {
+                when(mediaType) {
+                    MediaType.OGG -> it.getJSONObject("audio")
+                    MediaType.WEBM -> it
+                }
+            }.getString("link")
             Music(title, song, type)
         }
         if (songList.isNotEmpty())

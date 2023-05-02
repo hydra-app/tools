@@ -15,7 +15,7 @@ subprojects {
 }
 
 tasks.dokkaHtmlMultiModule.configure {
-    moduleName.set("Hydra tools for modules")
+    moduleName.set("Hydra tools")
     outputDirectory.set(file("$rootDir/docs"))
     includes.from("README.md")
 }

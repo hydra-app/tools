@@ -4,6 +4,7 @@ import knf.hydra.core.models.data.ExtraSection
 import knf.hydra.core.models.data.Music
 import knf.hydra.core.models.data.MusicData
 import knf.hydra.tools.core.ktx.map
+import knf.hydra.tools.core.ktx.mapNotNull
 import knf.hydra.tools.core.ktx.toList
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.flow
@@ -51,20 +52,24 @@ fun animeMusicSection(sectionTitle: String,  animeTitle: String, mediaType: Medi
             emit(null)
             return@flow
         }
-        val songList = songsArray.map { songObject ->
-            var title = songObject.getJSONObject("song").getString("title")
-            val artists = songObject.getJSONObject("song").getJSONArray("artists")
-            if (artists.length() > 0) {
-                title += " - ${artists.getJSONObject(0).getString("name")}"
-            }
-            val type = songObject.getString("slug")
-            val song = songObject.getJSONArray("animethemeentries").getJSONObject(0).getJSONArray("videos").getJSONObject(0).let {
-                when(mediaType) {
-                    MediaType.OGG -> it.getJSONObject("audio")
-                    MediaType.WEBM -> it
+        val songList = songsArray.mapNotNull { songObject ->
+            try {
+                var title = songObject.getJSONObject("song").getString("title")
+                val artists = songObject.getJSONObject("song").getJSONArray("artists")
+                if (artists.length() > 0) {
+                    title += " - ${artists.getJSONObject(0).getString("name")}"
                 }
-            }.getString("link")
-            Music(title, song, type)
+                val type = songObject.getString("slug")
+                val song = songObject.getJSONArray("animethemeentries").getJSONObject(0).getJSONArray("videos").getJSONObject(0).let {
+                    when(mediaType) {
+                        MediaType.OGG -> it.getJSONObject("audio")
+                        MediaType.WEBM -> it
+                    }
+                }.getString("link")
+                Music(title, song, type)
+            } catch (e: Exception) {
+                null
+            }
         }
         if (songList.isNotEmpty())
             emit(MusicData(songList))

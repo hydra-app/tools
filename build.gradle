@@ -6,5 +6,5 @@ plugins {
     id 'org.jetbrains.dokka' version '1.8.10' apply false
 }
 
-project.ext.core_version = "1.0.2-rc3"
-project.ext.lib_version = "1.0.7"
+project.ext.core_version = "1.0.2-rc4"
+project.ext.lib_version = "1.0.8"

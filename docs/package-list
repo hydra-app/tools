@@ -3,7 +3,7 @@ $dokka.linkExtension:html
 
 module:anime_music
 knf.hydra.tools.anime_music
-module:mal
-knf.hydra.tools.mal
 module:core-ktx
 knf.hydra.tools.core.ktx
+module:mal
+knf.hydra.tools.mal

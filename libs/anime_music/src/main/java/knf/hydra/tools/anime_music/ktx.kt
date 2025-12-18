@@ -40,7 +40,7 @@ fun animeMusicSection(sectionTitle: String,  animeTitle: String, mediaType: Medi
     return ExtraSection(sectionTitle, flow {
         val searchJson = withContext(Dispatchers.IO) {
             val encodedTitle = URLEncoder.encode(animeTitle, "utf-8")
-            URL("https://api.animethemes.moe/search?q=$encodedTitle&include[anime]=animethemes.animethemeentries.videos.audio,animethemes.song.artists").readText()
+            URL("https://api.animethemes.moe/search?q=$encodedTitle&fields[search]=anime&include[anime]=animethemes.animethemeentries.videos.audio,animethemes.song.artists").readText()
         }
         val searchArray = JSONObject(searchJson).getJSONObject("search").getJSONArray("anime")
         if (searchArray.length() == 0) {

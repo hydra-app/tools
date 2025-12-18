@@ -1,1 +1,1 @@
-sourceset_dependencies='{":libs:core:core-ktx:dokkaHtml/androidTestRelease":[],":libs:core:core-ktx:dokkaHtml/debug":[],":libs:core:core-ktx:dokkaHtml/main":[],":libs:core:core-ktx:dokkaHtml/release":[],":libs:core:core-ktx:dokkaHtml/testFixtures":[],":libs:core:core-ktx:dokkaHtml/testFixturesDebug":[],":libs:core:core-ktx:dokkaHtml/testFixturesRelease":[]}'
+sourceset_dependencies='{":libs:core:core-ktx/debug":[],":libs:core:core-ktx/main":[],":libs:core:core-ktx/release":[]}'

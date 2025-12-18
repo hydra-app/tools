@@ -1,6 +1,11 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
 $dokka.location:knf.hydra.tools.anime_music////PointingToDeclaration/anime_music/knf.hydra.tools.anime_music/index.html
-$dokka.location:knf.hydra.tools.anime_music//animeMusicSection/#kotlin.String#kotlin.String/PointingToDeclaration/anime_music/knf.hydra.tools.anime_music/anime-music-section.html
+$dokka.location:knf.hydra.tools.anime_music//animeMusicSection/#kotlin.String#kotlin.String#knf.hydra.tools.anime_music.MediaType#kotlin.Function1[kotlin.collections.List[org.json.JSONObject],org.json.JSONObject]/PointingToDeclaration/anime_music/knf.hydra.tools.anime_music/anime-music-section.html
+$dokka.location:knf.hydra.tools.anime_music/MediaType.OGG///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}anime_music/knf.hydra.tools.anime_music/-media-type/-o-g-g/index.html
+$dokka.location:knf.hydra.tools.anime_music/MediaType.WEBM///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}anime_music/knf.hydra.tools.anime_music/-media-type/-w-e-b-m/index.html
+$dokka.location:knf.hydra.tools.anime_music/MediaType///PointingToDeclaration/anime_music/knf.hydra.tools.anime_music/-media-type/index.html
+$dokka.location:knf.hydra.tools.anime_music/MediaType/entries/#/PointingToDeclaration/anime_music/knf.hydra.tools.anime_music/-media-type/entries.html
+$dokka.location:knf.hydra.tools.anime_music/MediaType/valueOf/#kotlin.String/PointingToDeclaration/anime_music/knf.hydra.tools.anime_music/-media-type/value-of.html
+$dokka.location:knf.hydra.tools.anime_music/MediaType/values/#/PointingToDeclaration/anime_music/knf.hydra.tools.anime_music/-media-type/values.html
 knf.hydra.tools.anime_music
-

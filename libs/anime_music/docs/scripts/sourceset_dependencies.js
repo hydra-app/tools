@@ -1,1 +1,1 @@
-sourceset_dependencies='{":libs:anime_music:dokkaHtml/androidTestRelease":[],":libs:anime_music:dokkaHtml/debug":[],":libs:anime_music:dokkaHtml/main":[],":libs:anime_music:dokkaHtml/release":[],":libs:anime_music:dokkaHtml/testFixtures":[],":libs:anime_music:dokkaHtml/testFixturesDebug":[],":libs:anime_music:dokkaHtml/testFixturesRelease":[]}'
+sourceset_dependencies='{":libs:anime_music/debug":[],":libs:anime_music/main":[],":libs:anime_music/release":[]}'

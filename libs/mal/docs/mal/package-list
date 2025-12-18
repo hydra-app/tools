@@ -17,7 +17,7 @@ $dokka.location:knf.hydra.tools.mal/AnimeType.OVA///PointingToDeclaration/{"org.
 $dokka.location:knf.hydra.tools.mal/AnimeType.SPECIAL///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}mal/knf.hydra.tools.mal/-anime-type/-s-p-e-c-i-a-l/index.html
 $dokka.location:knf.hydra.tools.mal/AnimeType.TV///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}mal/knf.hydra.tools.mal/-anime-type/-t-v/index.html
 $dokka.location:knf.hydra.tools.mal/AnimeType///PointingToDeclaration/mal/knf.hydra.tools.mal/-anime-type/index.html
-$dokka.location:knf.hydra.tools.mal/AnimeType/fromValue/#kotlin.String/PointingToDeclaration/mal/knf.hydra.tools.mal/-anime-type/from-value.html
+$dokka.location:knf.hydra.tools.mal/AnimeType/entries/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-anime-type/entries.html
 $dokka.location:knf.hydra.tools.mal/AnimeType/value/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-anime-type/value.html
 $dokka.location:knf.hydra.tools.mal/AnimeType/valueOf/#kotlin.String/PointingToDeclaration/mal/knf.hydra.tools.mal/-anime-type/value-of.html
 $dokka.location:knf.hydra.tools.mal/AnimeType/values/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-anime-type/values.html
@@ -48,4 +48,3 @@ $dokka.location:knf.hydra.tools.mal/MALSearcher/charactersData/#/PointingToDecla
 $dokka.location:knf.hydra.tools.mal/MALSearcher/galleryData/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/gallery-data.html
 $dokka.location:knf.hydra.tools.mal/MALSearcher/staffData/#/PointingToDeclaration/mal/knf.hydra.tools.mal/-m-a-l-searcher/staff-data.html
 knf.hydra.tools.mal
-

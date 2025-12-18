@@ -1,17 +1,11 @@
 
-import org.jetbrains.dokka.gradle.DokkaTaskPartial
-
 plugins {
     id("org.jetbrains.dokka")
 }
 
 
 subprojects {
-    tasks.withType<DokkaTaskPartial>().configureEach {
-        dokkaSourceSets.configureEach {
-            includes.from("README.md")
-        }
-    }
+    apply(plugin = "org.jetbrains.dokka")
 }
 
 tasks {
@@ -21,16 +15,29 @@ tasks {
         }
         into ("${rootProject.projectDir}/docs/images")
     }
+    register("publishAllToMavenLocal") {
+        group = "publishing"
+        description = "Publishes all modules to Maven Local"
+        dependsOn(subprojects.mapNotNull { it.tasks.findByName("publishToMavenLocal") })
+    }
+}
+
+dependencies {
+    dokka(project(":libs:core:core-ktx"))
+    dokka(project(":libs:mal"))
+    dokka(project(":libs:anime_music"))
 }
 
 afterEvaluate {
-    tasks.getByName("dokkaHtmlMultiModule") {
+    tasks.getByName("dokkaGenerateHtml") {
         finalizedBy("copyLogo")
     }
 }
 
-tasks.dokkaHtmlMultiModule.configure {
-    moduleName.set("Hydra tools")
-    outputDirectory.set(file("$rootDir/docs"))
-    includes.from("README.md")
+dokka {
+    dokkaPublications.html {
+        moduleName.set("Hydra tools")
+        outputDirectory.set(file("$rootDir/docs"))
+        includes.from("$rootDir/libs/README.md")
+    }
 }

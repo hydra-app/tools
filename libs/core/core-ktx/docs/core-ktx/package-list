@@ -6,4 +6,3 @@ $dokka.location:knf.hydra.tools.core.ktx//mapNotNull/org.json.JSONArray#kotlin.F
 $dokka.location:knf.hydra.tools.core.ktx//toList/org.json.JSONArray#/PointingToDeclaration/core-ktx/knf.hydra.tools.core.ktx/to-list.html
 $dokka.location:knf.hydra.tools.core.ktx//toStringList/org.json.JSONArray#/PointingToDeclaration/core-ktx/knf.hydra.tools.core.ktx/to-string-list.html
 knf.hydra.tools.core.ktx
-

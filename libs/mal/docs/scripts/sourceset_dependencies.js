@@ -1,1 +1,1 @@
-sourceset_dependencies='{":libs:mal:dokkaHtml/androidTestRelease":[],":libs:mal:dokkaHtml/debug":[],":libs:mal:dokkaHtml/main":[],":libs:mal:dokkaHtml/release":[],":libs:mal:dokkaHtml/testFixtures":[],":libs:mal:dokkaHtml/testFixturesDebug":[],":libs:mal:dokkaHtml/testFixturesRelease":[]}'
+sourceset_dependencies='{":libs:mal/debug":[],":libs:mal/main":[],":libs:mal/release":[]}'

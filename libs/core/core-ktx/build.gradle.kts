@@ -31,12 +31,14 @@ android {
         jvmTarget = "1.8"
     }
     publishing {
-        singleVariant("release")
+        singleVariant("release") {
+            withSourcesJar()
+        }
     }
 }
 
 dependencies {
-    dokkaPlugin("org.jetbrains.dokka:android-documentation-plugin:2.0.0")
+    dokkaPlugin("org.jetbrains.dokka:android-documentation-plugin:${rootProject.extra["dokka_version"]}")
 }
 
 dokka {
@@ -73,21 +75,34 @@ tasks.register<Jar>("androidSourcesJar") {
     from(android.sourceSets.getByName("main").java.srcDirs)
 }
 
-afterEvaluate {
-    publishing {
-        repositories {
-            maven {
-                url = uri(layout.buildDirectory.dir("repository"))
-            }
-        }
-        publications {
-            create<MavenPublication>("release") {
-                groupId = "knf.hydra.tools"
-                artifactId = "core-ktx"
-                version = rootProject.extra["lib_version"] as String?
-                artifact(tasks.named("androidSourcesJar"))
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "knf.hydra.tools"
+            artifactId = "core-ktx"
+            version = rootProject.extra["lib_version"] as String?
+            afterEvaluate {
+                from(components["release"])
                 artifact(tasks.named("dokkaHtmlJar"))
                 artifact(tasks.named("dokkaJavadocJar"))
+            }
+            pom {
+                name.set("Hydra Tools - Core")
+                description.set("Convenient Kotlin extensions")
+                url.set("https://github.com/hydra-app/tools/tree/main/libs/core/core-ktx")
+                licenses {
+                    license {
+                        name.set("GPL-3.0 license")
+                        url.set("https://www.gnu.org/licenses/gpl-3.0.html")
+                    }
+                }
+                developers {
+                    developer {
+                        id.set("unbarredstream")
+                        name.set("KNF APPS")
+                        email.set("knf.apps@gmail.com")
+                    }
+                }
             }
         }
     }

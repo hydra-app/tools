@@ -8,7 +8,7 @@ plugins {
 
 android {
     namespace = "knf.hydra.tools.anime_music"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         minSdk = 21
@@ -31,7 +31,9 @@ android {
         jvmTarget = "1.8"
     }
     publishing {
-        singleVariant("release")
+        singleVariant("release") {
+            withSourcesJar()
+        }
     }
 }
 
@@ -71,26 +73,34 @@ tasks.register<Jar>("dokkaJavadocJar") {
     archiveClassifier.set("javadoc")
 }
 
-tasks.register<Jar>("androidSourcesJar") {
-    archiveClassifier.set("sources")
-    from(android.sourceSets.getByName("main").java.srcDirs)
-}
-
-afterEvaluate {
-    publishing {
-        repositories {
-            maven {
-                url = uri(layout.buildDirectory.dir("repository"))
-            }
-        }
-        publications {
-            create<MavenPublication>("release") {
-                groupId = "knf.hydra.tools"
-                artifactId = "anime_music"
-                version = rootProject.extra["lib_version"] as String?
-                artifact(tasks.named("androidSourcesJar"))
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "knf.hydra.tools"
+            artifactId = "anime_music"
+            version = rootProject.extra["lib_version"] as String?
+            afterEvaluate {
+                from(components["release"])
                 artifact(tasks.named("dokkaHtmlJar"))
                 artifact(tasks.named("dokkaJavadocJar"))
+            }
+            pom {
+                name.set("Hydra Tools - Anime Music")
+                description.set("Anime music searcher for Hydra modules")
+                url.set("https://github.com/hydra-app/tools/tree/main/libs/anime_music")
+                licenses {
+                    license {
+                        name.set("GPL-3.0 license")
+                        url.set("https://www.gnu.org/licenses/gpl-3.0.html")
+                    }
+                }
+                developers {
+                    developer {
+                        id.set("unbarredstream")
+                        name.set("KNF APPS")
+                        email.set("knf.apps@gmail.com")
+                    }
+                }
             }
         }
     }

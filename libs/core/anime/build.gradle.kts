@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "knf.hydra.tools.core.anime"
-    compileSdk = 34
+    compileSdk = 36
     defaultConfig {
         minSdk = 21
 
@@ -27,6 +27,11 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
+    }
 }
 
 tasks.register<Jar>("androidSourcesJar") {
@@ -34,19 +39,14 @@ tasks.register<Jar>("androidSourcesJar") {
     from(android.sourceSets.getByName("main").java.srcDirs)
 }
 
-afterEvaluate {
-    publishing {
-        repositories {
-            maven {
-                url = uri(layout.buildDirectory.dir("repository"))
-            }
-        }
-        publications {
-            create<MavenPublication>("release") {
-                groupId = "knf.hydra.tools"
-                artifactId = "core-animes"
-                version = rootProject.extra["lib_version"] as String?
-                artifact(tasks.named("androidSourcesJar"))
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "knf.hydra.tools"
+            artifactId = "core-animes"
+            version = rootProject.extra["lib_version"] as String?
+            afterEvaluate {
+                from(components["release"])
             }
         }
     }

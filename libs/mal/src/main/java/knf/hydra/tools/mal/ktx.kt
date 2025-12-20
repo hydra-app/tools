@@ -220,7 +220,7 @@ class MALSearcher internal constructor(private val id: Int) {
                 }
                 val to = Calendar.getInstance().let {
                     if (aired.isNull("to")) return@let null
-                    val json = aired.getJSONObject("to")
+                    val json = aired.getJSONObject("prop").getJSONObject("to")
                     it.set(json.getInt("year"), json.getInt("month"), json.getInt("day"))
                     it
                 }

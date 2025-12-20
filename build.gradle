@@ -17,6 +17,6 @@ plugins {
     id 'org.jetbrains.dokka-javadoc' version '2.1.0' apply false
 }
 
-project.ext.core_version = "1.0.2-rc7"
-project.ext.lib_version = "1.0.11"
+project.ext.core_version = "1.0.2-rc8"
+project.ext.lib_version = "1.0.13"
 project.ext.dokka_version = "2.1.0"

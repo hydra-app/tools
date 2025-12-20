@@ -18,5 +18,5 @@ plugins {
 }
 
 project.ext.core_version = "1.0.2-rc8"
-project.ext.lib_version = "1.0.13"
+project.ext.lib_version = "1.0.12"
 project.ext.dokka_version = "2.1.0"

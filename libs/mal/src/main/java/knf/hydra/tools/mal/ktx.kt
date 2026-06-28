@@ -12,6 +12,7 @@ import knf.hydra.core.models.data.TextData
 import knf.hydra.core.models.data.VerticalImageItem
 import knf.hydra.core.models.data.YoutubeData
 import knf.hydra.core.models.data.YoutubeItem
+import knf.hydra.core.models.data.asFlow
 import knf.hydra.tools.core.anime.AnimeNotFoundException
 import knf.hydra.tools.core.ktx.map
 import knf.hydra.tools.core.ktx.mapNotNull
@@ -236,9 +237,16 @@ class MALSearcher internal constructor(private val id: Int) {
          */
         fun trailerSection(title: String): ExtraSection {
             return ExtraSection(title, flow {
-                emit(
-                    YoutubeData(raw().getJSONObject("trailer").getString("youtube_id"))
-                )
+                val data = raw().getJSONObject("trailer")
+                val videoId = data.getString("youtube_id")
+                val embedUrl = data.getString("embed_url")
+                val finalId = if (videoId == "null" && embedUrl != "null") {
+                    embedUrl.substringAfter("embed/").substringBefore("?")
+                } else {
+                    videoId
+                }
+                val videoData = if (finalId != "null") YoutubeData(finalId) else null
+                emit(videoData)
             })
         }
     }
@@ -467,10 +475,20 @@ class MALSearcher internal constructor(private val id: Int) {
              */
             fun addPromoVideos() {
                 list.addAll(
-                    videosData.getJSONArray("promo").map {
-                        YoutubeItem(
-                            it.getJSONObject("trailer").getString("youtube_id")
-                        )
+                    videosData.getJSONArray("promo").mapNotNull {
+                        val data = it.getJSONObject("trailer")
+                        val videoId = data.getString("youtube_id")
+                        val embedUrl = data.getString("embed_url")
+                        val finalId = if (videoId == "null" && embedUrl != "null") {
+                            embedUrl.substringAfter("embed/").substringBefore("?")
+                        } else {
+                            videoId
+                        }
+                        if (finalId != "null") {
+                            YoutubeItem(finalId)
+                        } else {
+                            null
+                        }
                     }
                 )
             }
@@ -481,10 +499,20 @@ class MALSearcher internal constructor(private val id: Int) {
              */
             fun addMusicVideos() {
                 list.addAll(
-                    videosData.getJSONArray("music_videos").map {
-                        YoutubeItem(
-                            it.getJSONObject("video").getString("youtube_id")
-                        )
+                    videosData.getJSONArray("music_videos").mapNotNull {
+                        val data = it.getJSONObject("video")
+                        val videoId = data.getString("youtube_id")
+                        val embedUrl = data.getString("embed_url")
+                        val finalId = if (videoId == "null" && embedUrl != "null") {
+                            embedUrl.substringAfter("embed/").substringBefore("?")
+                        } else {
+                            videoId
+                        }
+                        if (finalId != "null") {
+                            YoutubeItem(finalId)
+                        } else {
+                            null
+                        }
                     }
                 )
             }
